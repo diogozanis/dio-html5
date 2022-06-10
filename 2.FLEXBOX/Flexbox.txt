@@ -8,4 +8,4 @@ flex-direction - propriedade que define o eixo principal do container
     row (padrão) - da esquerda para a direita
     row-reverse - sentido oposto
     column - na vertical
-    column-reverse - na vertical ao contrário
+    column-reverse - na vertical ao contrário.
