@@ -1,5 +1,11 @@
+Extensions do VSCode:
 HTML Snippets
 Live HTML Previewer
 
-
-display:flex
+Propriedade
+display: flex - faz com que os objetos cmportem-se como flexbox, inclusive objetos filhos
+flex-direction - propriedade que define o eixo principal do container
+    row (padrão) - da esquerda para a direita
+    row-reverse - sentido oposto
+    column - na vertical
+    column-reverse - na vertical ao contrário
