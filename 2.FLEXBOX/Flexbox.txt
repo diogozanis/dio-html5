@@ -4,8 +4,30 @@ Live HTML Previewer
 
 Propriedade
 display: flex - faz com que os objetos cmportem-se como flexbox, inclusive objetos filhos
+
 flex-direction - propriedade que define o eixo principal do container
     row (padrão) - da esquerda para a direita
     row-reverse - sentido oposto
     column - na vertical
     column-reverse - na vertical ao contrário
+
+flex-wrap: quebra de linha
+	padrão: nowrap - acaba vazando dependendo do layout
+	wrap-reverse: vai querando as linhas para cima
+
+flex-flow - junta o direction com o wrap
+
+Justify-content - alinha os itens dentro do container (pai)
+	flex-start: início do container
+	flex-end: ao final
+	center: ao centro
+	space-between: cria um espaçamento igual entre os elementos
+	space-around: o mesmo que o anteior, mas o espaçamento do meio é duas vezes maior que o das pontas
+
+Align-items: trata do alinhamento do flex items de acordo com o exo do container
+Permite o alinhamento no eixo vertical. não há necessidade do conhecimento da altura dos flex items
+	center: linhamento dos itens ao centro
+	stretch: padrão, e os flex items crescem igualmente de acordo com o maior conteúdo
+	flex-start: alinhamento dos itens no início
+	flex-end: ao final
+	baseline: alinhamento de  acordo com a linha base da tipografia dos itens
