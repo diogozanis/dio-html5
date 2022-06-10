@@ -1,2 +1,3 @@
-# BootCamp DIO Santander - HMTL5
-- finalizado em 08/06/2022
+# BootCamp DIO Santander - HMTL5/CSS/JS
+
+- Fullstack Developer
