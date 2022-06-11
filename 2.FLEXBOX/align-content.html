@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-content</title>
+    <style>
+        .container{
+            display: flex;
+            height: 400px;
+            max-width: 400px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            align-items:center;
+            justify-content:center;
+            flex-direction: row;
+        }
+
+        .item{
+            background-color: orange;
+            padding: 0 5px;
+            flex: 5px;
+            text-align: center;
+            color: white;
+            margin: 5px;
+            max-width: 70px;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .start{
+            align-content: flex-start;
+        }
+
+        .end{
+            align-content: flex-end;
+        }
+
+        .around{
+            align-content:space-around;
+        }
+
+        .between{
+            align-content: space-between;
+            
+        }
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">purus. Donec efficitur tortor sed tortor dapibus cursus. Nulla metus arcu, auctor in molestie at</div>
+        <div class="item">ullam nec turpis eu eros maximus viverra.</div>
+        <div class="item">Ut condimentum mollis gravida. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis</div>
+        <div class="item">Donec beget suscipit suscipit. Ut pretium volutpat metus</div>
+        <div class="item">Don pretium volutpat metus</div>
+        <div class="item">Ut condimentum mollis gravida. </div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">purus. Donec efficitur tortor sed tortctor in molestie at</div>
+        <div class="item">ullam nec turpis eu eros maximus viverra.</div>
+        <div class="item">Ut condimentum mollis gravida. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis</div>
+        <div class="item">Donec suscipit suscipit. Ut pretium volutpat metus</div>
+        <div class="item">Douscipit suscipit. Ut pretium volutpat metus</div>
+        <div class="item">Ut condimentum mollis gravida. </div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container start">
+        <div class="item">purus. Donec efficitur tortor sed tortctor in molestie at</div>
+        <div class="item">ullam nec turpis eu eros maximus viverra.</div>
+        <div class="item">Ut condimentum mollis gravida. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis</div>
+        <div class="item">Donec blandit turpis eget suscipit suscipit. Ut pretium volutpat metus</div>
+        <div class="item">Donec blandit turpis eget suscipit suscipit. Ut pretium volutpat metus</div>
+        <div class="item">Ut condimentum mollis gravida. </div>
+    </div>
+    
+    <p>flex-end</p>
+    <div class="container end">
+        <div class="item">purus. Donec efficitur tortor sed tortctor in molestie at</div>
+        <div class="item">ullam nec turpis eu eros maximus viverra.</div>
+        <div class="item">Ut condimentum mollis gravida. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis</div>
+        <div class="item">Donec blandiget suscipit suscipit. Ut pretium volutpat metus</div>
+        <div class="item">Donec bscipit suscipit. Ut pretium volutpat metus</div>
+        <div class="item">Ut condimentum mollis gravida. </div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container around">
+        <div class="item">purus. Donec efficitur tortor sed tortctor in molestie at</div>
+        <div class="item">ullam nec turpis eu eros maximus viverra.</div>
+        <div class="item">Ut condimentum mollis gravida. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis</div>
+        <div class="item">Donec it. Ut pretium volutpat metus</div>
+        <div class="item">Donec bit turpis ecipit suscipit. Ut pretium volutpat metus</div>
+        <div class="item">Ut condimentum mollis gravida. </div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container between">
+        <div class="item">purus. Donec efficitur tortor sed tortctor in molestie at</div>
+        <div class="item">ullam nec turpis eu eros maximus viverra.</div>
+        <div class="item">Ut condimentum mollis gravida. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis</div>
+        <div class="item">Donec blandit tpit. Ut pretium volutpat metus</div>
+        <div class="item">Donec blandit turpis eget suscipit suscipit. Ut pretium volutpat metus</div>
+        <div class="item">Ut condimentum mollis gravida. </div>
+    </div>
+</body>
+</html>

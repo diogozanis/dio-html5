@@ -24,10 +24,19 @@ Justify-content - alinha os itens dentro do container (pai)
 	space-between: cria um espaçamento igual entre os elementos
 	space-around: o mesmo que o anteior, mas o espaçamento do meio é duas vezes maior que o das pontas
 
-Align-items: trata do alinhamento do flex items de acordo com o exo do container
+Align-items: trata do alinhamento dos flex-items de acordo com o eixo do container
 Permite o alinhamento no eixo vertical. não há necessidade do conhecimento da altura dos flex items
 	center: linhamento dos itens ao centro
 	stretch: padrão, e os flex items crescem igualmente de acordo com o maior conteúdo
 	flex-start: alinhamento dos itens no início
 	flex-end: ao final
 	baseline: alinhamento de  acordo com a linha base da tipografia dos itens
+
+Align-content: responsável por tratar do alinhamento das linhas do container em relação ao eixo vertical do container.
+Necessário utilizar a quebra de linhas e container deve ser maior que a soma das linhas
+	center: alinhamento ao centro
+	stretch: (padrão) itens crescem igualmente
+	flex-start: alinhamento dos itens no início
+	flex-end: alinhamento dos itens no final
+	space-between: cria espaço igual entre os elementos, começando das pontas
+	around: o mesmo que o anterior, mas o espaço das pontas é metade do espaço entre elementos

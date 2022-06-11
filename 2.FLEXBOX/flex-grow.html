@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-grow</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 400px;
+            border: 1px solid black;
+            padding: 5px;
+            
+        }
+        
+        .item{
+            background-color: orangered;
+            border: 1px solid orange;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .fg0{
+            flex-grow: 0;
+        }
+
+        .fg1{
+            flex-grow: 1;
+        }
+
+        .fg2{
+            flex-grow: 2;
+        }
+        
+        .fg3{
+            flex-grow: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <p>flex-grow:0</p>
+    <section class="container">
+        <div class="item fg0">111111111</div>
+        <div class="item fg0">2</div>
+        <div class="item fg0">3</div>
+        <div class="item fg0">4</div>
+    </section>
+    <p>flex-grow!=0</p>
+    <section class="container">
+        <div class="item fg2">1</div>
+        <div class="item fg1">22222222</div>
+        <div class="item fg0">3</div>
+        <div class="item fg3">4</div>
+    </section>
+</body>
+</html>
