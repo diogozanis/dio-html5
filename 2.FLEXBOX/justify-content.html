@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - justify-content</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 400px;
+            border: 1px solid black;
+            margin: 1px;
+            margin:5px;
+        }
+
+        .item{
+            background-color: #ccc;
+            margin: 5px;
+            text-align: center;
+            color: blue;
+        }
+
+        .flex-start{
+            justify-content: flex-start;
+        }
+
+        .flex-end{
+            justify-content: flex-end;
+        }
+
+        .flex-center{
+            justify-content: center;
+        }
+
+        .space-between{
+            justify-content: space-between;
+        }
+
+        .space-around{
+            justify-content:space-around;
+        }
+
+        .d-column{
+            flex-direction: column;
+            height:200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Direction: ROW (default)</h2>
+    <p>flex-start</p>
+    <section class="container flex-start">
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container flex-end">
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+    </section>
+
+    <p>flex-center</p>
+    <section class="container flex-center">
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+    </section>
+
+    <p>space-between</p>
+    <section class="container space-between">
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+    </section>
+
+    <p>space-around</p>
+    <section class="container space-around">
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+    </section>
+
+    <h2>Direction: COLUMN</h2>
+    <p>flex-start</p>
+    <section class="container d-column flex-start">
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container d-column flex-end">
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+    </section>
+
+    <p>flex-center</p>
+    <section class="container d-column flex-center">
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+    </section>
+
+    <p>space-between</p>
+    <section class="container d-column space-between">
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+    </section>
+
+    <p>space-around</p>
+    <section class="container d-column space-around">
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+        <div class="item">OOO</div>
+    </section>
+</body>
+</html>
