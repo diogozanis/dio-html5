@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-self</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 300px;
+        }
+
+        .item{
+            background-color: black;
+            color: aliceblue;
+            margin: 5px;
+            text-align: center;
+            
+        }
+
+        .as-start{
+            align-self: flex-start;
+        }
+
+        .as-end{
+            align-self: flex-end;
+        }
+
+        .as-center{
+            align-self: center;
+        }
+
+        .as-baseline{
+            align-self: baseline;
+        }
+
+        .as-stretch{
+            align-self: stretch;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>row</p>
+    <div class="container">
+        <div class="item as-end">Olá</div>
+        <div class="item as-start">OI<br>certo</div>
+        <div class="item as-stretch">Hello</div>
+        <div class="item as-start">Que tal?</div>
+    </div>
+
+    <p>column</p>
+    <div class="container column">
+        <div class="item as-end">Olá</div>
+        <div class="item as-stretch">OI<br>certo</div>
+        <div class="item as-center">Hello</div>
+        <div class="item as-start">Que tal?</div>
+    </div>
+</body>
+</html>

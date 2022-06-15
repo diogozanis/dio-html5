@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+        }
+
+        .item{
+            background-color: orange;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .flex1{
+            flex: 1;
+            /* grow:1 shrink:1 basis:0*/ 
+        }
+
+        .flex2{
+            flex:2;
+            /* grow:2 shrink:1 basis:0*/ 
+        }
+    </style>
+</head>
+<body>
+    <P>flex 1</P>
+    <div class="container">
+        <div class="item flex1">a</div>
+        <div class="item flex1">BBBBBB BBBB</div>
+        <div class="item flex1">CCCCC CC</div>
+        <div class="item flex1">DD</div>
+        <div class="item flex1">E</div>
+    </div>
+
+    <P>flex 2</P>
+    <div class="container">
+        <div class="item flex2">a</div>
+        <div class="item flex1">BB</div>
+        <div class="item flex1">CCCCC CC</div>
+        <div class="item flex2">DD</div>
+        <div class="item flex1">E</div>
+    </div>
+</body>
+</html>
